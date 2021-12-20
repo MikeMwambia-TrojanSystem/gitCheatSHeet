@@ -1,0 +1,44 @@
+Git Pull Requests.
+
+Pull request is a proposal of the potential changes.
+
+git config user.name <username> ---- Changes the name of the user in the local repository.
+
+git config user.email <emailAddress> ---- Changes the email of the user in the local repository.
+
+git config --list ----- Displays the list of the current repository configuration.
+
+git commit --amend --author="Node Beast <nodebeast@protonmail.com>" ----- Changes the author of last commit.
+
+Modifying last commit using amend option
+
+This is a destructive operation.
+
+Git will create new commit and the last one will be garbage collected.
+
+git commit --amend -m "New message of the previous commit" -------Amends the commit message of the previous commit
+
+git commit --amend --author="Mike Adams" ------- Amends the author of the previous commit
+
+git remote ------ Shows the remote server
+
+git remote -v ----- Shows which remote servers are configured.
+
+git push --set-upstream origin elastic-search  --------- Sets the upstream of elastic-search
+
+git push -u origin elastic-search  ----------- Sets the elastic-search to upstream
+
+Master branch on github should be protected which means that no new merge should be merged without at least one approval.
+
+NB:- 
+When you fork a repository you have to add upstream to it inorder to get updates wherever the forked repository gets updated.
+Use the command
+
+git remote add upstream <url>
+
+When you want to pull from upstream repository you use 
+
+git pull upstream <branchname>
+
+With verbrose
+git pull upstream <branchname> -v 

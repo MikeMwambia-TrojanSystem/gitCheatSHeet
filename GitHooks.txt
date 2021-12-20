@@ -1,0 +1,36 @@
+Git hooks 
+These scrips run on hooks and allows Git to perform checks at every point of the process.
+
+Example hooks : - 
+If the hooks exit with 0 it means they have excecuted successfully 
+
+Pre-commit hook --- This is a hook that is excecuted before a commit is made.
+
+Prepare commit msg hook 
+
+Commit-msg hook
+
+Post-commit hook
+
+Uses of Git Hooks : - 
+
+- Verify or edit commit message
+
+- Run application tests before each commit or before pushing to remote
+
+- Verify and potentially fix code syntax mistakes using linters like ESLint
+
+- Generate notifications after successful committing
+
+- Deploy updated application to production on the server
+
+NB:- Git creates sample hookd when you initialize a new Git repository,
+but all those sample hooks are disabled by default
+Local Git hooks are not pushed to remote automatically they are local.
+
+---------------------------------------------------------------------------
+NPM package should be installed as development dependency if you are going 
+to use it only during development process 
+(for debugging , testing, linting etc)
+
+git commit -a -m "Commit message here" ------- Adds non commited file to stage env and commits them

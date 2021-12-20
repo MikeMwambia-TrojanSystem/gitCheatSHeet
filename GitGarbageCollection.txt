@@ -1,0 +1,21 @@
+Git Garbage Collection
+
+Git runs garbage collection from time to time to remove unreachable objects.
+
+git gc -----runs garbage collection and removes unreachable objects.
+
+------------------------------------------------------------------------------------------
+Squashing of commits at Github
+
+This ensures that git has a linear commit history
+
+It combines all commits from feature branch into main branch into one commit
+
+git rebase -i -------Performs a rebase with squashing
+
+-----------------------------------------------------------------------------------------
+Git hub pages
+
+git remote set-url <url> ------- Changes the URL setting.
+
+npm install <packageName> -D ------------ Installs <packagename> as development dependecy

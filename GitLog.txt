@@ -1,0 +1,18 @@
+Advanced Git : - 
+
+git log ----------------- Extensive view of git logs
+
+git log --oneline  --------- Shows the git log with one line commit
+
+git lg ------------ Extensive log of the git commits
+
+git log --graph ---------- Shows how many parents each commit has
+
+git log --graph --oneline  -------- Shows how many parents each commit has in one line
+
+git log --stat ------------- Shows how many lines were added during each commit
+
+git log -p ------- With this option you'll actuall changes in every file
+
+git log -<number> ------ Shows last number of commit e.g 'git log -4' shows the last 4 commits.
+

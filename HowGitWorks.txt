@@ -1,0 +1,52 @@
+How to start a repo : - 
+
+git init ------------ Initializes an empty repo.
+
+Git Objects : - 
+
+Git stores object types of 
+
+-Blob 
+
+-Tree
+
+-Annotated tags
+
+-Commit
+
+Git low level commands : - 
+
+git hash-object
+
+git cat-file
+
+git mktree
+
+echo "Hello, Git" | git hash-object --stdin -w
+
+git hash-object <filename> -w
+
+git cat-file -p <hash>  Contents of the object
+
+git cat-file -s <hash>  Size of the object
+
+git cat-file -t <hash>  Type of the object
+
+git ls-files -s         Lists files in staging area
+
+git checkout-index -a   
+
+git commit -m <message> Commits a specific commit to staging area
+
+
+Git States : - 
+
+Git has 3 states 
+
+Working directory 
+
+Staging area(index)
+
+Git repository
+
+

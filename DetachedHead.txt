@@ -1,0 +1,15 @@
+---------------------------------------------------------------------------------------------------------------------
+Git --- Detached HEAD 
+
+Git head points to the currently checked out branch.
+
+When you move the HEAD from the currently checked out branch and it points to a specific commit 
+that means it has moved to detached HEAD state.
+
+git checkout <SHA1> --------- Checks out commit for <SHA1>  
+
+Moving the repo into detached head state
+
+Commits made in detached HEAD state will be garbage collected
+
+git branch -d <branchname> ------- Deletes the branch name

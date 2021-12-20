@@ -1,0 +1,9 @@
+Git reset
+
+git reset <commitnumber> --------Allows you to discard some committed changes.
+
+git reset takes three arguments 'hard' , 'mixed' and 'soft' 
+
+During reset git discards commits , discards changes in staging area , Keep changes in working directory.
+
+git reset HEAD~5 ----------- Resets 5 previous commits 

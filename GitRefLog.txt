@@ -1,0 +1,9 @@
+Reflog - log of all Git operations
+
+This command shows entire history of all operations made in repository.
+
+git reflog ------- Outputs all the activities in the repositories that happened.
+
+Mostly used to reset the repository back to where it was before ,this can only happen
+
+on your local repo.

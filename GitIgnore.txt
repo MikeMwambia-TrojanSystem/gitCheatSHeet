@@ -1,0 +1,7 @@
+Git Ignore : - 
+
+These are files that are used to point to Git whihc files should be ignored and which should be pushed.
+
+There's a resource at gitignore.io to generate .ignore file for different languages.
+
+gitignore.io ------- Resource to create .gitignore files for different language. 

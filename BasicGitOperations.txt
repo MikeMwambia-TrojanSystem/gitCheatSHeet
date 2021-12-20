@@ -1,0 +1,23 @@
+Setting users : - 
+
+git config --global user.name <name>      This sets the user name globally.
+
+git config --global user.email <email>    This sets the email globally.
+
+git config --list     This lists the current configuration of Git.
+
+git config user.name <name>   This sets the user name for the repo locally
+
+git config user.email <email> This sets the email for the repo locally
+
+git status          Current state of Git repository
+
+git add             Add files to staging area
+
+git commit          Write changes to Git repository
+
+git log             History of changes(commits)
+
+git checkout        Checkout commit or branch
+
+

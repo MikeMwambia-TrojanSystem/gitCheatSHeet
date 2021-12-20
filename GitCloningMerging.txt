@@ -1,0 +1,117 @@
+-------------------------------------------------------------------
+#Branch Merges
+
+There are two ways to merge fast-forward merge and 3 - way merge
+
+The branch you want to merge into is called receiving branch.
+
+If you want to merge into master in this case master is called receiving branch.
+
+Fast forward merge is possible when there are no further commits in the receiving branch(master in this case)
+
+after the commit where feature branch was created.
+
+#Merging Process
+
+Create new feature branch from the main branch
+
+Make changes in the new branch and commit them
+
+Checkout main branch(recieving branch)
+
+Merge feature branch to the current receiving branch by 
+
+git merge <feature-branch>
+
+git branch -d <branch_name>  --- Deletes a branch
+
+----------------------------------------------------------------------
+#Merge Conflicts
+
+Fast forward happens when there're no changes done to the recieving branch(e.g master)
+
+Three way merge happens when there're changes that have happened on the recieving branch
+(e.g master) and the other branch from where it's being copied.
+
+Merge conflicts happen when the same file has been edited in two different branches.
+
+What you need to do is choose the changes you want to commit and edit in any editor keep 
+one of the changes and then commit to solve the merge conflict.
+
+---------------------------------------------------------------------
+#Fetch 
+
+Let's suppose that new branch was created in the remote repository
+
+After 'git fetch' same branch will be created in your local git repository because branch is just 
+text file in the .git/refs/heads
+
+----------------------------------------------------------------------
+#Git pull
+
+Clone remote repository
+
+Checkout "master" branch locally
+
+Make changes and commit them in "master" branch in remote repository
+
+After "git pull" locally git will fetch remote changes
+
+After fetching Git will merge remote "master" branch into local "master" branch (fast forward or 3-way merge)
+
+Staging area(index) and working directory will be automatically updated after merge
+
+git remote -v ---- Shows the name of the remote git servers.
+
+git remote ---- shows the name of the remote servers.
+
+git remote show <servername> ---- shows the name and details of the remote server
+
+----------------------------------------------------------------------
+#Git push fetch pull
+
+git branch -a ----- shows all the number of branches in a local and remote repo.
+
+git branch  -r ---- lists only remote branches.
+
+git branch ---- lists only local branches.
+
+git branch -vv ----- lists only remote branches.
+
+After cloning of any remote repository Git will create only one local branch with the same name
+
+as default branch in the remote repository.T
+
+git push --set-upstream <githubServerName> <branchName> ---- This set the branch on remote server that will be tracked by local branch e.g git push --set-upstream origin feature2
+
+The shorthand for above is git push -u
+
+git push -u <LOCALBRANCH> <REMOTE BRANCH NAME> --- Sets upstream branch for the local branch e.g 
+
+git push -u origin master --- Sets local master branch as the upstream branch for remote origin branch
+
+git remote update origin --prune  ---- Removes the deleted branches on the remote repositories from local repository tracking.
+
+git branch -D <branchname> ----- Forces delete on local branch that is not merged yet.
+
+git push <gitserveraddress> -d <branchname> -------Deletes the remote branch e.g git push origin -d temp
+
+git show-ref  --- Shows all local and remote references whether they are same.
+
+git show-ref <branchname>  ---- Shows references of <branchname> e.g git show-ref main shows references to main branch
+
+git rm --cached <file-name> removes the cached file from the git repository .ignore file 
+
+gitignore.io ------- Shortcut to create .gitignore files for different language.
+
+---------------------------------------------------------------------------------------------------------------------
+Git --- Detached HEAD 
+
+Git head points to the currently checked out branch.
+
+When you move the HEAD from the currently checked out branch and it points to a specific commit 
+that means it has moved to detached HEAD state.
+
+Commits made in detached HEAD state will be garbage collected
+
+git branch -d <branchname> ------- Deletes the branch name

@@ -1,0 +1,24 @@
+Git Tags : - 
+
+There are two types of tags Lightweight and Annotated tags
+
+Git tags ------- These are static text pointer to specific commit.
+
+Branches ------- This are dynamic pointers to specific git commit
+
+
+git tag <tag name>  -------- This is how you create a tag in github
+
+git tag  ---------- Shows the available tags
+
+git show <tag name> -------- Show the last commit which is the commit tagges by the <tag name>
+
+NB:- You cannot have two tags with same name.
+
+Git lightweight tags are not pushed to remote by default.
+
+git tag -a v1.0.0.1 -m <message> ------ Adds anotated tag in a project.
+
+git push -v <remoteserver name> --tags -------- Pushes tags to the remote server.
+
+git push -v origin v1.0.0 ------ Pushes the tag v1.0.0 to the origin server address.

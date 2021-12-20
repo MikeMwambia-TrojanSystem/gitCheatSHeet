@@ -1,0 +1,11 @@
+Git Stashing
+
+Stashing allows you to save changes in a specific branch that you are working on and you have not 
+commited them yet.
+Let's say for example you are working on specific feature branch e.g Temp branch and you want to check out 
+another branch say for example Temp 2 branch but you want to keep changes made in Temp branch.
+This is where stashing comes in it allows you to save the uncommitted changes in Temp branch allowing you to checkout other branches and once you are done you can come back to the stash on Temp branch and continue working on your changes.
+
+git stash ---- Command to stash changes in working directory
+
+git stash pop ------ Command to load/retrieve the stash changes in working directory 

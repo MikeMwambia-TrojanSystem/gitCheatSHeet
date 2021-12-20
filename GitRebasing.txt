@@ -1,0 +1,27 @@
+Git Rebasing : - 
+
+Rewrites history.
+History becomes linear every commit has single parent.
+Doesn't keep entire history of all commits.
+Merging of the feature branch into base branch using rebasing is two step process.
+
+Rebasing is a two step process : - 
+
+First checkout a branch say 'feature' branch
+
+git checkout feature
+
+Make changes and commit on this branch.
+Then rebase the checked out branch on top of base branch say 'master'
+
+git rebase master
+
+Then check out the base branch in this case master 
+
+git checkout master
+
+Merge working branch in this case 'feature' branch into the base branch in this case master
+
+git merge feature
+
+After the above process Fast forward merge will be used

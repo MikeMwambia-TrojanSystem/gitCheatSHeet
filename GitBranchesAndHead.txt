@@ -1,0 +1,51 @@
+----------------------------------------------------------------
+#Branch
+
+Branch is just a text reference to commit
+
+Default branch is master
+
+Mutiple branches can exist in the same repository
+
+Pointers for all branches are located in .git/refs/heads folder
+
+Current branch tracks new commits
+
+Branch pointer moves automatically after every new commit
+
+Change branch git checkout <branchname>
+
+git branch --- List all local branches
+
+git branch <name> --- Create new branch
+
+git checkout <name> --- Checkout specific branch
+
+git checkout <commithash> --- Checkout specific commit history
+
+git checkout -b <branchname> --- Create  and checkout branch
+
+git branch -d <name> --- Delete specific branch
+
+git branch -m <old> <new> --- Rename specific branch
+
+git log --graph -------- Gives the graphical representation of the commits tree
+
+-----------------------------------------------------------------
+#HEAD
+
+This is reference to the currently checked-out branch or commit
+
+HEAD is locallly significant and only one
+
+Pointer is located in the .git/HEAD file
+
+Default pointer is ref:refs/heads/master
+
+Change reference to specific branch git checkout <branch>
+
+Change reference to specific commit git checkout <sha1>
+
+Change reference and create a branch git switch -c <new-branch-name>
+
+When head points to specific commit instead of working directory branch this state is called 'detached Head'

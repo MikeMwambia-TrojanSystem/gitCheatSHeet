@@ -1,0 +1,6 @@
+Cherry Picking Operation
+
+Allows the user to pick any commit and insert it into the currently checked out branch as the current commit.
+
+git cherry-pick <commithash>
+git cherry-pick --no-commit 

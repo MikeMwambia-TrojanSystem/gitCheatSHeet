@@ -1,0 +1,10 @@
+Git revert 
+
+git revert <commithash>
+
+git revert HEAD --------- Takes the changes in the last commit and reverts them.
+
+NB:- Very useful if you have to revert changes from public repo that you have posted.
+This operation is not distructive.
+
+git show <commithash> ------- Shows the commit changes made to specific commits.

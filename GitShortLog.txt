@@ -1,0 +1,25 @@
+Git shortlog ------------ This command shows summary of all the commits made to a repository.
+
+git shortlog 
+
+git shortlog -n ---------- This command sorts commits in descending order.
+
+git shortlog -n -s ------- Supresses the list of all commits and gives summary.
+
+git shortlog -n -s -e --------- Gives list of all authors witht their emails.
+
+git log --author=<name>  --------- Filters commits by author name e.g git log --author="Evan You";
+
+git log --author=<name> --oneline ---------- Filters commits by author name and collapses in one line.
+
+git log --grep="<searchparameter>"  ------ Filter the logs by the search parameter e.g git log --grep="Development" returns all commits with "Development" somewhere in commit message or description.
+
+git log --pretty=format:"%H" -------- Formats the logs in a pretty format and prints out the hash
+
+git log --pretty=format:"%cn %H" ------- Formats the log in a pretty format and prints name alongside the hash of the commits
+
+git log --pretty=format:"%cn %h" -------- Formats the log in a pretty format and prints the name alongside the shortened hash
+
+git log --merges --oneline --------- Shows the branches that were merged into base branch e.g master
+
+git log --no-merges --oneline --------- Shows all the commits that were not merged
