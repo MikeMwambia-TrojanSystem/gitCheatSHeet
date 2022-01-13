@@ -1,0 +1,18 @@
+To push to remote repositories you use 
+
+git push
+
+If your local branch and remote branch is the same name then you 
+can just do it :
+
+git push origin branchName
+
+When your local and remote branch name is different then you
+can just do :
+
+git push origin localBranchName : remoteBranchName
+
+git branch -r  ----- returns all the remote branches
+
+NB: - origin is not the remote repository name.It is rather a local alias 
+set as a key in place of the remote repository URL.
